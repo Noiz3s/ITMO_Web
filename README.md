@@ -1,2 +1,1 @@
-# ITMO_Web
-ITMO_Web
+This is a repository for web labs 
