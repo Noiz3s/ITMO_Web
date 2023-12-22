@@ -7,6 +7,8 @@
 body {
     background-color: lightgray;
     background-image: url("../Assets/landscape_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -16,12 +18,16 @@ body::-webkit-scrollbar {
 }
 
 
-h1.info_about_game{
+h1.about_game{
     margin: 8px;
 }
 
 p.groove {
     border-style: groove;
+}
+
+footer{
+    float: right;
 }
 
 nav,footer{
@@ -59,13 +65,58 @@ a.navigation {
 
 div.info_about_game{
     text-decoration: none;
-    width: 1100px;
-    height: 500px;
-    border: solid black 2px;
-    font-family: 'ADLaM Display', fantasy;
-    font-size: 22px;
     display: inline-block;
+    width: 100vw;
+    height: 500px;
+    vertical-align: middle;
+    border: solid black 2px;
     margin: 5px;
     scroll-snap-align: center;
+    text-overflow: clip;
+    & p{
+        margin-top: 3px;
+        margin-left: 5px;
+        text-align: left;
+        font-family: 'ADLaM Display', fantasy;
+        font-size: 20px;
+        white-space: initial;
+    }
+    & pre{
+        text-align: center;
+        white-space: break-spaces;
+    }
 }
 
+p.loading_time{
+    float: right;
+    text-decoration: none;
+    text-align: center;
+    margin: 2px;
+    border-style: groove;
+    border-color: black;
+    color: black;
+    background-image: url("../Assets/simple_bg.png");
+    font-family: 'ADLaM Display', fantasy;
+    font-size: 11px;
+}
+
+.navigation:hover{
+    border-color: yellow;
+}
+
+.current_page{
+    border: green 4px;
+}
+
+.Tasks{
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    margin: 2px;
+    border-style: groove;
+    border-color: black;
+    color: black;
+    background-image: url("../Assets/simple_bg.png");
+    font-family: 'ADLaM Display', fantasy;
+    font-size: 11px;
+}

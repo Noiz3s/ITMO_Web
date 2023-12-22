@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ether media</title>
+    <meta name="description" content="Web page of Ether game">
+    <meta name="keywords" content="Ether,game,The Ether">
+    <title>Table constructor</title>
     <link rel="stylesheet" href="Styles/MainStyle.css">
     <script src="Scripts/LoadingTime.js"></script>
     <script src="Scripts/CurrentPage.js"></script>
@@ -17,5 +19,19 @@
         <a class="navigation" href="Media_page.html"> Media </a>
     </nav>
 </header>
+<div class="Tasks">
+    <form id="NewTask">
+        <label for="taskName">Add new task:</label>
+        <input type="text" id="taskName" name="taskName"><br>
+        <input type="submit" value="Add new task">
+    </form>
+
+    <div id="TaskList">
+
+    </div>
+</div>
+
+<script src="Scripts/Task_constructor.js"></script>
+
 </body>
 </html>
